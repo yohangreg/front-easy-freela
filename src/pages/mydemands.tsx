@@ -37,7 +37,6 @@ export default function MyDemandsPage() {
         authedAxiosClient.get<{ message: string, data: Demand[] }>("/demand/me").then(({ data }) => {
             setDemands(data.data);
         });
-        //eslint-disable-next-line react-hooks/exaustive-deps
     }, []);
 
     console.log(demands)

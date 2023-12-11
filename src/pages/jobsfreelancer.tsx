@@ -38,7 +38,6 @@ export default function JobsFreelancerPage() {
         authedAxiosClient.get<{ message: string, data: Demand[] }>("/demand/show").then(({ data }) => {
             setDemands(data.data);
         });
-        //eslint-disable-next-line react-hooks/exaustive-deps
     }, []);
 
     const handleSubmit = async () => {
