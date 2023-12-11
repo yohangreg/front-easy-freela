@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import { Footer } from "@/components/Footer";
 import { NavBar } from "@/components/NavBar/NavBar";
-import Logo from "../../public/images/logo-homepage.png";
 
 export default function HomePage() {
   return (
@@ -53,7 +52,11 @@ export default function HomePage() {
           <div className={styles.logo_img_wrapper}>
             <Image
               className={styles.logo_img}
-              src={Logo}
+              src={{
+                src: '/images/logo-homepage.png',
+                width: 377,
+                height:479
+              }}
               alt="Easy Freela logotipo"
             />
           </div>

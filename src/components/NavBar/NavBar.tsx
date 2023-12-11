@@ -7,7 +7,6 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo from "../../../public/images/logo-small-removebg-preview.png";
 import { NavItem } from "./NavItem";
 
 export function NavBar() {
@@ -35,7 +34,11 @@ export function NavBar() {
         <div className={styles.menu_itens}>
           <Image
             className={styles.navbar_logo_image}
-            src={Logo}
+            src={{
+              src: '/images/logo-small-removebg-preview.png',
+              height: 119,
+              width:631,
+            }}
             alt="Easy Freela logotipo"
           />
           <ul className={styles.navbar_links_list}>

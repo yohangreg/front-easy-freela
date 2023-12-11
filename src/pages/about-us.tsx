@@ -2,9 +2,6 @@ import styles from "../styles/AboutUs.module.css";
 
 import { NavBar } from "@/components/NavBar/NavBar";
 import WorkerCard from "@/components/WorkerCard";
-import Rosseau from "../../public/images/JJRosseau-portrait.jpg";
-import Hobbes from "../../public/images/ThomasHobbes-portrait.webp";
-import Locke from "../../public/images/JohnLocke-portrait.jpeg";
 
 export default function AboutUsPage() {
   return (
@@ -46,17 +43,29 @@ export default function AboutUsPage() {
           </h1>
           <div className={styles.workersCards}>
             <WorkerCard
-              portrait={Locke}
+              portrait={{
+                src: '/images/ThomasHobbes-portrait.webp',
+                width: 222,
+                height: 227
+              }}
               name="John Locke"
               description="Tech lead desde 2019 e um dos primeiros funcionários da Easy Freela"
             />
             <WorkerCard
-              portrait={Rosseau}
+              portrait={{
+                src: '/images/JJRosseau-portrait.jpg',
+                width: 1024,
+                height: 1024
+              }}
               name="Jean J. Rousseau"
               description="Desenvolvedor Fullstack Sênior desde 2022."
             />
             <WorkerCard
-              portrait={Hobbes}
+              portrait={{
+                src: '/images/ThomasHobbes-portrait.webp',
+                width: 200,
+                height: 200
+              }}
               name="Thomas Hobbes"
               description="CTO desde 2019 e co-fundador da Easy Freela."
             />

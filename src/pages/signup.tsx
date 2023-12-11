@@ -6,9 +6,7 @@ import { Radio, RadioGroup } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
-import { useNavigation } from "react-router-dom";
 
-import Logo from "../../public/images/logo-small-removebg-preview.png";
 
 export default function SignupPage() {
   const [name, setName] = useState("");
@@ -50,7 +48,11 @@ export default function SignupPage() {
         <Link href="/">
           <Image
             className={styles.logo_image}
-            src={Logo}
+            src={{
+              src: '/images/logo-small-removebg-preview.png',
+              width: 631,
+              height: 119
+            }}
             alt="Easy Freela logotipo"
           />
         </Link>

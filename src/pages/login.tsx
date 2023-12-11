@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
-import Logo from "../../public/images/logo-small-removebg-preview.png";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -43,7 +42,11 @@ export default function LoginPage() {
         <Link href="/">
           <Image
             className={styles.logo_image}
-            src={Logo}
+            src={{
+              src: '/images/logo-small-removebg-preview.png',
+              width: 631,
+              height: 119
+            }}
             alt="Easy Freela logotipo"
           />
         </Link>
