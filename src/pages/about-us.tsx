@@ -43,29 +43,17 @@ export default function AboutUsPage() {
           </h1>
           <div className={styles.workersCards}>
             <WorkerCard
-              portrait={{
-                src: '/images/ThomasHobbes-portrait.webp',
-                width: 222,
-                height: 227
-              }}
+              portrait={'/images/ThomasHobbes-portrait.webp'}
               name="John Locke"
               description="Tech lead desde 2019 e um dos primeiros funcionários da Easy Freela"
             />
             <WorkerCard
-              portrait={{
-                src: '/images/JJRosseau-portrait.jpg',
-                width: 1024,
-                height: 1024
-              }}
+              portrait={'/images/JJRosseau-portrait.jpg'}
               name="Jean J. Rousseau"
               description="Desenvolvedor Fullstack Sênior desde 2022."
             />
             <WorkerCard
-              portrait={{
-                src: '/images/ThomasHobbes-portrait.webp',
-                width: 200,
-                height: 200
-              }}
+              portrait={'/images/ThomasHobbes-portrait.webp'}
               name="Thomas Hobbes"
               description="CTO desde 2019 e co-fundador da Easy Freela."
             />

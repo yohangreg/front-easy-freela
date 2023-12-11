@@ -52,11 +52,7 @@ export default function HomePage() {
           <div className={styles.logo_img_wrapper}>
             <Image
               className={styles.logo_img}
-              src={{
-                src: '/images/logo-homepage.png',
-                width: 377,
-                height:479
-              }}
+              src='/images/logo-homepage.png'
               alt="Easy Freela logotipo"
             />
           </div>

@@ -34,11 +34,8 @@ export function NavBar() {
         <div className={styles.menu_itens}>
           <Image
             className={styles.navbar_logo_image}
-            src={{
-              src: '/images/logo-small-removebg-preview.png',
-              height: 119,
-              width:631,
-            }}
+            src='/images/logo-small-removebg-preview.png'
+            
             alt="Easy Freela logotipo"
           />
           <ul className={styles.navbar_links_list}>

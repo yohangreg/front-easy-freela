@@ -24,11 +24,9 @@ export default function CandidateJobPage() {
 
     async function fetchData() {
         try {
-            const id = localStorage.getItem("user_id") || "";
-            const response = await authedAxiosClient.get("/demand/show-demand-by-id/" + job_demand_id);
+            const response = await authedAxiosClient.get("/demand/me");
             const data = response.data;
             setTitle(data.demand.title);
-            setUserId(id)
           //console.log(data.demand);
         } catch (error) {
             console.error(error);

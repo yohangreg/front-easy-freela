@@ -42,11 +42,7 @@ export default function LoginPage() {
         <Link href="/">
           <Image
             className={styles.logo_image}
-            src={{
-              src: '/images/logo-small-removebg-preview.png',
-              width: 631,
-              height: 119
-            }}
+            src='/images/logo-small-removebg-preview.png'
             alt="Easy Freela logotipo"
           />
         </Link>

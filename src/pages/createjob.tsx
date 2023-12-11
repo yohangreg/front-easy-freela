@@ -143,7 +143,7 @@ export default function CreateJobPage() {
                             <Button
                                 onClick={() => {
                                     return router.push({
-                                        pathname: "/candidatejob"
+                                        pathname: "/mydemands"
                                     })
                                 }
 
